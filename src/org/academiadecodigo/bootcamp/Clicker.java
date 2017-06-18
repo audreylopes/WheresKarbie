@@ -10,41 +10,33 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
  */
 public class Clicker implements MouseHandler{
 
-    Clickable c;
-    private MouseEvent mouseEvent;
+    private Clickable c;
 
-    Position position;
+
+    //private Position position;
     private int mouseX;
     private int mouseY;
 
     public Clicker(Clickable clickable) {
         c = clickable;
-        position = new Position();
+        //position = new Position();
         Mouse m = new Mouse(this);
         m.addEventListener(MouseEventType.MOUSE_CLICKED);
 
-
     }
-
-
-
-    public void setC(Clickable clickable) {
-        c = clickable;
-    }
-
 
     public int getMouseX() {
-        return mouseX;
+        return this.mouseX;
     }
     public int getMouseY() {
-        return mouseY;
+        return this.mouseY;
 
     }
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        mouseX = (int) mouseEvent.getX();
-        mouseY = (int) mouseEvent.getY();
+        this.mouseX = (int) mouseEvent.getX();
+        this.mouseY = (int) mouseEvent.getY();
         c.whenClick();
         System.out.println(this.mouseX);
         System.out.println(this.mouseY);

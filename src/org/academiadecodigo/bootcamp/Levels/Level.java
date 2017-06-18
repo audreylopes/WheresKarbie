@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.Levels;
 
 import org.academiadecodigo.bootcamp.Clicker;
+import org.academiadecodigo.simplegraphics.graphics.Shape;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -20,4 +21,12 @@ public class Level {
             return false;
         }
     }
+
+    public void deletePicture(Picture picture, Picture picture2){
+        picture.delete();
+        picture2.delete();
+
+    }
+
+
 }
