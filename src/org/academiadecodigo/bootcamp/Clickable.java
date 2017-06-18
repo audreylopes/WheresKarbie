@@ -5,6 +5,9 @@ package org.academiadecodigo.bootcamp;
  */
 public interface Clickable {
 
+    /**
+     * A class that implements Clickable can use MouseHandler
+     */
     void whenClick();
 
 }

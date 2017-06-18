@@ -1,5 +1,4 @@
 package org.academiadecodigo.bootcamp;
-
 import org.academiadecodigo.bootcamp.Levels.*;
 
 /**
@@ -7,7 +6,13 @@ import org.academiadecodigo.bootcamp.Levels.*;
  */
 public class LevelFactory {
 
-    public void levelCreator(LevelTypes levelTypes){
+    /**
+     * Creates Levels
+     *
+     * @param levelTypes Enum with level types
+     *
+     */
+    public void levelCreator(LevelTypes levelTypes) {
 
         switch (levelTypes) {
             case START:
@@ -25,9 +30,9 @@ public class LevelFactory {
             case LEVEL4:
                 new Level4();
                 break;
-            case BETWEENLEVEL:
+            case EASTEREGG:
+                new EasterEgg();
                 break;
         }
-
     }
 }

@@ -11,6 +11,13 @@ public class Level {
 
     public final int PADDING = 10;
 
+    /**
+     * Returns a boolean if the clicker position matches the picture position
+     *
+     * @param clicker allow position check
+     * @param picture allow picture position check
+     * @return boolean
+     */
     public boolean whenClicked(Clicker clicker, Picture picture) {
         if (clicker.getMouseX() >= picture.getX() &&
                 clicker.getMouseX() <= picture.getMaxX() &&
@@ -22,6 +29,12 @@ public class Level {
         }
     }
 
+    /**
+     * Deletes the pictures drawn
+     *
+     * @param picture picture drawn
+     * @param picture2 picture drawn
+     */
     public void deletePicture(Picture picture, Picture picture2){
         picture.delete();
         picture2.delete();
