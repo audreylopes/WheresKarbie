@@ -43,11 +43,12 @@ public class Clicker implements MouseHandler{
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        System.out.println(this.mouseX);
-        System.out.println(this.mouseY);
         mouseX = (int) mouseEvent.getX();
         mouseY = (int) mouseEvent.getY();
         c.whenClick();
+        System.out.println(this.mouseX);
+        System.out.println(this.mouseY);
+
 
     }
 
