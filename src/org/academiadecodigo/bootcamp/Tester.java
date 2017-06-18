@@ -11,10 +11,10 @@ import org.academiadecodigo.bootcamp.Levels.StartLevel;
 public class Tester {
     public static void main(String[] args) {
 
-        //StartLevel startLevel = new StartLevel();
+        StartLevel startLevel = new StartLevel();
 
 
-        Level1 level1 = new Level1();
+        //Level1 level1 = new Level1();
 
     }
 }

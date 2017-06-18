@@ -16,7 +16,7 @@ public class Level4 extends Level implements Clickable {
 
     public Level4() {
 
-        level4 = new Picture(10, 10, "f780e0891450c8aeaa49bb798c417341.jpg");
+        level4 = new Picture(10, 10, "game-over.png");
         clicker = new Clicker(this);
         level4.draw();
         System.out.println("gameover");
